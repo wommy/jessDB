@@ -22,13 +22,12 @@ const headers = ['Asset Name', 'Resource Type', 'Topic', 'Date Completed', 'Scor
 
 const raw = require('./rows.js')
 
-const row = [
-	[ raw[0], raw[1], raw[2], raw[3], raw[4], ],
-]
+const row = [ raw[0].trim(), raw[1].trim(), raw[2].trim(), raw[3].trim(), raw[4].trim(), ]
 // for ( let ea of rows ){
 // 	console.log(``)
 // }
 
+console.log(headers)
 console.log(row)
 
 
