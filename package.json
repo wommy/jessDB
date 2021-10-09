@@ -1,0 +1,16 @@
+{
+	"name": "wommy",
+	"version": "1.0.0",
+	"description": "jess's table app",
+	"main": "index.js",
+	"license": "MIT",
+	"bin": {
+		"wommy": "index.js"
+	},
+	"dependencies": {
+		"chalk": "^4.1.2",
+		"enquirer": "^2.3.6",
+		"googleapis": "^88.2.0",
+		"log-symbols": "^4.1.0"
+	}
+}
