@@ -22,13 +22,36 @@ const headers = ['Asset Name', 'Resource Type', 'Topic', 'Date Completed', 'Scor
 
 const raw = require('./rows.js')
 
-const row = [ raw[0].trim(), raw[1].trim(), raw[2].trim(), raw[3].trim(), raw[4].trim(), ]
-// for ( let ea of rows ){
-// 	console.log(``)
+for ( let i = 0; i < raw.length; i++ ){
+
+	console.log(i)
+	for ( let j = 0; j< 5; j++ ){
+
+		const row = []
+		row.push(raw[j].trim())
+		console.log(row)
+	}
+}
+
+// 2 nested fors
+	// iterate thru each in raw
+	//
+
+// console.log(0%5)
+
+// const rows = raw => {
+	
+	const row = [ raw[0].trim(), raw[1].trim(), raw[2].trim(), raw[3].trim(), raw[4].trim(), ]
+
 // }
 
 console.log(headers)
 console.log(row)
+
+const rows = raw.length / 5
+// for ( let ea of raw ){
+// 	console.log(ea.indexOf%5)
+// }
 
 
 let response = []
