@@ -19,18 +19,21 @@ const weekChapter = {
 	// add(  )
 
 const headers = ['Asset Name', 'Resource Type', 'Topic', 'Date Completed', 'Score']
+console.log(headers)
 
 const raw = require('./rows.js')
 
-for ( let i = 0; i < raw.length; i++ ){
+const rows = []
+for ( let i = 0; i < 5; i++ ){
 
-	console.log(i)
+	// console.log(i)
+	let row = []
 	for ( let j = 0; j< 5; j++ ){
-
-		const row = []
-		row.push(raw[j].trim())
-		console.log(row)
+		let offset = i*5
+		row.push(raw[`${j+offset}`].trim())
 	}
+	rows.push(row)
+	console.log(rows)
 }
 
 // 2 nested fors
@@ -41,14 +44,13 @@ for ( let i = 0; i < raw.length; i++ ){
 
 // const rows = raw => {
 	
-	const row = [ raw[0].trim(), raw[1].trim(), raw[2].trim(), raw[3].trim(), raw[4].trim(), ]
+	// const row = [ raw[0].trim(), raw[1].trim(), raw[2].trim(), raw[3].trim(), raw[4].trim(), ]
 
 // }
 
-console.log(headers)
-console.log(row)
+// console.log(row)
 
-const rows = raw.length / 5
+// const rows = raw.length / 5
 // for ( let ea of raw ){
 // 	console.log(ea.indexOf%5)
 // }
