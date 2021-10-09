@@ -8,10 +8,20 @@ console.log(`
 let topic = 'Chapter 34: Introduction to the Endocrine System'
 
 console.log()
-console.log(topic.slice(8,10))
+let chapter = topic.slice(8,10)
 console.log()
 
-// Chapter 
+/* TODO
+
+- [ ] week from chapter
+- [ ] book
+- [ ] chapter in table
+- [ ] points earned from chart
+- [ ] running total
+
+- [ ] general formatting
+
+ */
 
 
 // tableRaw = 
