@@ -1,0 +1,40 @@
+| Asset Name | Resource Type | Topic | Date Completed | Score |
+| Pre-Lecture Quiz: Chapter 34 | Pre-Lecture Quiz | Chapter 34: Introduction to the Endocrine System | Oct 8, 2021 8:29 PM | 100% |
+| Pre-Lecture Quiz: Chapter 29 | Pre-Lecture Quiz | Chapter 29: Introduction to the Autonomic Nervous System | Oct 8, 2021 6:02 PM | 100% |
+| Pre-Lecture Quiz: Chapter 33 | Pre-Lecture Quiz | Chapter 33: Anticholinergic Agents | Oct 8, 2021 4:43 PM | 100% |
+| Pre-Lecture Quiz: Chapter 32 | Pre-Lecture Quiz | Chapter 32: Cholinergic Agonists | Oct 8, 2021 4:36 PM | 100% |
+| Indirect Cholinomimetics | Picmonic | Chapter 32: Cholinergic Agonists | Oct 8, 2021 4:28 PM | 100% |
+| Direct Cholinomimetics | Picmonic | Chapter 32: Cholinergic Agonists | Oct 8, 2021 4:25 PM | 100% |
+| Cardiovascular Effects of Beta-Blockers | - | - | Oct 8, 2021 4:21 PM | 100% |
+| Systemic Effects of Beta-Blockers | Picmonic | Chapter 31: Adrenergic Antagonists | Oct 8, 2021 4:18 PM | 100% |
+| Pre-Lecture Quiz: Chapter 31 | Pre-Lecture Quiz | Chapter 31: Adrenergic Antagonists | Oct 8, 2021 4:16 PM | 100% |
+| Pre-Lecture Quiz: Chapter 30 | Pre-Lecture Quiz | Chapter 30: Adrenergic Agonists | Oct 8, 2021 4:02 PM | 100% |
+| Autonomic Nervous System | Picmonic | Chapter 29: Introduction to the Autonomic Nervous System | Oct 7, 2021 4:13 PM | 100% |
+| Pre-Lecture Quiz: Chapter 28 | Pre-Lecture Quiz | Chapter 28: Neuromuscular Junction Blocking Agents | Oct 4, 2021 9:11 PM | 100% |
+| Pre-Lecture Quiz: Chapter 26 | Pre-Lecture Quiz | Chapter 26: Opioids and Analgesic Agents | Oct 4, 2021 8:28 PM | 100% |
+| Opioid Antidote | Picmonic | Chapter 26: Opioids and Analgesic Agents | Oct 4, 2021 8:14 PM | 100% |
+| Pre-Lecture Quiz: Chapter 27 | Pre-Lecture Quiz | Chapter 27: General and Local Anesthetic Agents | Oct 4, 2021 8:13 PM | 100% |
+| IV Anesthetics | Picmonic | Chapter 27: General and Local Anesthetic Agents | Oct 4, 2021 8:08 PM | 100% |
+| Local Anesthetic Overview | Picmonic | Chapter 27: General and Local Anesthetic Agents | Oct 4, 2021 8:04 PM | 100% |
+| Pre-Lecture Quiz: Chapter 25 | Pre-Lecture Quiz | Chapter 25: Muscle Relaxants | Oct 4, 2021 7:59 PM | 100% |
+| Concepts in Action: Calcium in Muscle Contraction | Animation | Chapter 25: Muscle Relaxants | Oct 4, 2021 7:50 PM | Complete |
+| Concepts in Action: Muscle Contraction | Animation | Chapter 25: Muscle Relaxants | Oct 4, 2021 7:49 PM | Complete |
+| Parkinson's Drugs | Picmonic | Chapter 24: Antiparkinsonism Agents | Oct 1, 2021 8:02 PM | 100% |
+| Pre-Lecture Quiz: Chapter 24 | Pre-Lecture Quiz | Chapter 24: Antiparkinsonism Agents | Oct 1, 2021 7:58 PM | 100% |
+| Pre-Lecture Quiz: Chapter 23 | Pre-Lecture Quiz | Chapter 23: Antiseizure Agents | Sep 26, 2021 3:06 PM | 100% |
+| Pre-Lecture Quiz: Chapter 22 | Pre-Lecture Quiz | Chapter 22: Psychotherapeutic Agents | Sep 26, 2021 2:16 PM | 100% |
+| Antipsychotics Overview | Picmonic | Chapter 22: Psychotherapeutic Agents | Sep 26, 2021 2:00 PM | 100% |
+| Serotonin Norepinephrine Reuptake Inhibitors (SNRIs) | Picmonic | Chapter 21: Antidepressant Agents | Sep 26, 2021 1:11 PM | 100% |
+| Selective Serotonin Reuptake Inhibitor (SSRI) Overview | Picmonic | Chapter 21: Antidepressant Agents | Sep 26, 2021 1:08 PM | 100% |
+| Monoamine Oxidase Inhibitors (MAO-Is) | Picmonic | Chapter 21: Antidepressant Agents | Sep 26, 2021 1:01 PM | 100% |
+| Pre-Lecture Quiz: Chapter 21 | Pre-Lecture Quiz | Chapter 21: Antidepressant Agents | Sep 24, 2021 3:02 PM | 100% |
+| Pre-Lecture Quiz: Chapter 20 | Pre-Lecture Quiz | Chapter 20: Anxiolytic and Hypnotic Agents | Sep 23, 2021 4:23 PM | 100% |
+| Concepts in Action: Basilar Membrane | Animation | Chapter 19: Introduction to Nerves and the Nervous System | Sep 22, 2021 6:19 PM | Complete |
+| Concepts in Action: Stroke | Animation | Chapter 19: Introduction to Nerves and the Nervous System | Sep 22, 2021 6:17 PM | Complete |
+| Concepts in Action: Action Potential | Animation | Chapter 19: Introduction to Nerves and the Nervous System | Sep 22, 2021 6:14 PM | Complete |
+| Concepts in Action: Saltatory Conduction | Animation | Chapter 19: Introduction to Nerves and the Nervous System | Sep 22, 2021 6:11 PM | Complete |
+| Chapter 19: Introduction to Nerves and the Nervous System | PrepU Mastery Level Quizzes by Chapter | Chapter 19: Introduction to Nerves and the Nervous System | Sep 22, 2021 5:56 PM | Complete |
+| Concepts in Action: Nerve Synapse | Animation | Chapter 19: Introduction to Nerves and the Nervous System | Sep 22, 2021 5:22 PM | Complete |
+| Concepts in Action: Flipping the Membrane Potential | Animation | Chapter 19: Introduction to Nerves and the Nervous System | Sep 22, 2021 5:19 PM | Complete |
+| Pre-Lecture Quiz: Chapter 19 | Pre-Lecture Quiz | Chapter 19: Introduction to Nerves and the Nervous System | Sep 22, 2021 5:17 PM | 100% |
+| Concepts in Action: Equilibrium Potential | Animation | Chapter 19: Introduction to Nerves and the Nervous System | Sep 22, 2021 5:05 PM | Complete |

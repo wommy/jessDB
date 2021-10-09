@@ -2,8 +2,17 @@
 
 console.log(`
   | Week# | Book | Chapter# | Assignment | Date Completed | Grade | Points | Total |
-  | ----- | ---- | -------- | ---------- | -------------- | ----- | ------ | ----- |
+  |-|-|-|-|-|-|-|-|
 `)
+
+let topic = 'Chapter 34: Introduction to the Endocrine System'
+
+console.log()
+console.log(topic.slice(8,10))
+console.log()
+
+// Chapter 
+
 
 // tableRaw = 
 // 	headers
@@ -24,17 +33,23 @@ console.log(headers)
 const raw = require('./rows.js')
 
 const rows = []
-for ( let i = 0; i < 5; i++ ){
+console.log(`  | ${headers[0]} | ${headers[1]} | ${headers[2]} | ${headers[3]} | ${headers[4]} |`)
+for ( let i = 0; i < raw.length/5; i++ ){
 
 	// console.log(i)
 	let row = []
 	for ( let j = 0; j< 5; j++ ){
 		let offset = i*5
+		
+		if ( j == 2 ) { row.push( raw[`${j+offset}`].slice(8,2) ) }
+
 		row.push(raw[`${j+offset}`].trim())
 	}
 	rows.push(row)
-	console.log(rows)
+	console.log(`  | ${row[0]} | ${row[1]} | ${row[2]} | ${row[3]} | ${row[4]} |`)
 }
+
+
 
 // 2 nested fors
 	// iterate thru each in raw
