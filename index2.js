@@ -16,7 +16,7 @@ for ( let i = 5; i < data.length; i+=5 ){
 		'Karch',
 		chapter,
 		assignment,
-		data[i+3].split(' ', 3).join(' '),
+		`"${data[i+3].split(' ', 3).join(' ')}"`,
 		data[i+4],
 		(
 			assignment.split(' ').shift() == 'PrepU' && '1'
@@ -31,13 +31,15 @@ for ( let i = 5; i < data.length; i+=5 ){
 			|| total.push(0.25)
 		) && total.reduce( (p,c) => p + c),
 			
-	])
+	].join(', '))
 }
 
-let headers = ['week', 'book', 'chapter', 'assignment', 'date', 'grade', 'points', 'total']
+let headers = ['week', 'book', 'chapter', 'assignment', 'date', 'grade', 'points', 'total'].join(', ')
 rows.unshift(headers)
 
-console.log(rows)
+// console.log(rows)
+
+fs.writeFileSync( 'jessDB.csv', Buffer.from(rows))
 
 // for ( ea of data ){
 // 	console.log(ea)
