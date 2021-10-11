@@ -4,8 +4,19 @@ const fs = require('fs')
 const data = fs.readFileSync('./copypaste.txt', 'utf-8').split('\n')
 let rows = []
 
-for ( let i = 0; i < data.length; i+=5 ){
-	rows.push([data[i],data[i+1],data[i+2],data[i+3],data[i+4]])
+for ( let i = 5; i < data.length; i+=5 ){
+	let chapter = data[i+2].split(':').shift()
+	let week = +chapter.split(' ').pop()
+	let assignment = data[i+1]
+	rows.push([
+		(week < 24 && 5 || week < 29 && 6 || week < 34 && 7 || week < 39 && 8 || '-').toString(),
+		'Karch',
+		chapter,
+		assignment,
+		data[i+3].split(' ', 3).join(' '),
+		data[i+4],
+		()
+	])
 }
 
 console.log(rows)
