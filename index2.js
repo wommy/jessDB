@@ -39,7 +39,7 @@ rows.unshift(headers)
 
 // console.log(rows)
 
-fs.writeFileSync( 'jessDB.csv', Buffer.from(rows))
+fs.writeFileSync( 'jessDB.csv', rows.join('\n'))
 
 // for ( ea of data ){
 // 	console.log(ea)
