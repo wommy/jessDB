@@ -1,49 +1,45 @@
 const fs = require('fs')
-
 const data = fs.readFileSync('./11-27.txt', 'utf-8').split('\n')
 
 let rows = []
-// let total = [0]
+let headers = 'week, book, chapter, assignment, date, grade, points, total'
+rows.push(headers)
+let total = 0
 
-// let headers = ['week', 'book', 'chapter', 'assignment', 'date', 'grade', 'points', 'total'].join(', ')
-// rows.unshift(headers)
+let weekChapter = {
+	9: [39,40,41],
+	10: [42,43,44,45],
+	11: [46,47,48,49],
+	12: [50,51,52],
+	13: [53,54,55],
+	14: [56,57,58,59],
+}
+let chapterWeek = {}
+Object.keys( weekChapter ).forEach( 
+	week => weekChapter[week].forEach(
+		chapter => chapterWeek[chapter] = +week
+	)
+)
 
 for ( let i = 5; i < data.length; i+=5 ){
 
-	// let chapter = data[i+2].split(':').shift()
-	// let week = +chapter.split(' ').pop()
-	// let assignment = data[i+1]
+	let chapter = +data[i+2].slice(8,10)
+	let assignment = data[i+1]
+	let points = {
+		"PrepU Mastery Level Quizzes by Chapter": 1,
+		"Pre-Lecture Quiz": .5,
+	}[assignment] || .25
 
 	rows.push([
-		data[i],
-		data[i+1],
-		data[i+2],
-		`"${data[i+3].slice(0,12)}"`,
-		data[i+4],
-		// (
-		// 	week < 42 && 9 
-		// 	|| week < 46 && 10 
-		// 	|| week < 50 && 11
-		// 	|| week < 53 && 12
-		// 	|| week < 56 && 13
-		// 	|| week < 60 && 14
-		// ).toString(),
-		// 'Karch',
-		// chapter,
-		// assignment,
-		// `"${data[i+3].split(' ', 3).join(' ')}"`,
-		// data[i+4],
-		// (
-		// 	assignment.split(' ').shift() == 'PrepU' && '1'
-		// 	|| assignment == 'Pre-Lecture Quiz' && '0.5'
-		// 	|| '.25'
-		// ),
-		// (
-		// 	assignment.split(' ').shift() == 'PrepU' && total.push(1)
-		// 	|| assignment == 'Pre-Lecture Quiz' && total.push(0.5)
-		// 	|| total.push(0.25)
-		// ) && total.reduce( (p,c) => p + c),
+		chapterWeek[chapter], // week
+		'Karch', // book
+		`Chapter ${chapter}`,
+		assignment,
+		`"${data[i+3].slice(0,12).trim()}"`, // date
+		data[i+4], // grade
+		points,
+		total += points,
 	].join(', '))
 }
 
-fs.writeFileSync( '11-29-test.csv', rows.join('\n'))
+fs.writeFileSync( '11-29.csv', rows.join('\n'))
