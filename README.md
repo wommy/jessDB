@@ -1,58 +1,62 @@
 # jessDB by [@wommy](github.com/wommy)
 
-## project description
+## description
 
-jess has a copy/pasted file from some homework app
+a friend of mine has to submit her homework in a table
 
-she has to convert it into a table to turn it in
+the exported table's columns are wrong
 
-## given
+since it takes her a few hours to correct it, i wrote a script to automate it
 
-`11-27.txt`
+## given: [11-27.txt](https://github.com/wommy/jessDB/blob/dev/11-27.txt)
 
-each assignment takes 5 rows
+- [x] to `.csv`
+- [x] remove old headers
+- [x] fixup date
 
-i should probably just put this into csv first
+- [x] add new headers
+- [x] transform data
 
-- [x] removed old headers
-- [x] fixed up the date
+	- original shape  
+		```js
+		{
+			asset_name: "Pre-Lecture Quiz: Chapter 58",
+			resource_type: "Pre-Lecture Quiz",
+			topic: "Chapter 58: Drugs Affecting Gastrointestinal Motility",
+			date_completed: "Nov 26, 2021",
+			score: "100%"
+		}
+		```
 
-## whats next
+	- new shape
+		```js
+		{
+			week: 14,
+			book: "Karch",
+			chapter: 58,
+			assignment: "Pre-Lecture Quiz",
+			date: "Nov 26, 2021",
+			grade: "100%",
+			points: 0.5,
+			total: 0.5,
+		}
+		```
 
-- [ ] re-add headers
-- [ ] transform data
+### transform detailed, easy
 
-### original headers
+- [x] `book` : `'Karch'`
+- [x] `chapter` : `+data[i+2].slice(8,10)`
+- [x] `assignment` : `data[i+1]`
+- [x] `date` : `data[i+3]`
+- [x] `grade` : `data[i+4]`
+- [x] `total` += `points`
 
-```js
-{
-	asset_name: "Pre-Lecture Quiz: Chapter 58",
-	resource_type: "Pre-Lecture Quiz",
-	topic: "Chapter 58: Drugs Affecting Gastrointestinal Motility",
-	date_completed: "Nov 26, 2021",
-	score: "100%"
-}
-```
+### transform detailed, harder
 
-### end headers
+- [x] `week`: derived from `chapter`
 
-```js
-{
-	week: 14,
-	book: "Karch",
-	chapter: 58,
-	assignment: "Pre-Lecture Quiz",
-	date: "Nov 26, 2021",
-	grade: "100%",
-	points: 0.5,
-	total: 0.5,
-}
-```
-
-### how do i transform these
-
-- [x] week: derived from `chapter`
-  - ```js
+  - [x] `weekChapter{}`  
+	```js
 	{
 		9: [39,40,41],
 		10: [42,43,44,45],
@@ -62,29 +66,27 @@ i should probably just put this into csv first
 		14: [56,57,58,59],
 	}
 	```
-- [x] book: `'Karch'`
-- [x] chapter: `[i+2].slice(8,10)`
-- [x] assignment: `[i+1]`
-- [x] date: `[i+3]`
-- [x] grade: `[i+4]`
-- [ ] points: derived from `assignment`
-	- [x] |  
-		```js
-		assignment.split(' ').shift() == 'PrepU' && '1'
-		|| assignment == 'Pre-Lecture Quiz' && '0.5'
-		|| '.25'
-		```
-  - [x] becomes  
+
+  - [x] `chapterWeek{}`
+    - [x] `Object.keys(weekChapter)` 
+		- [x] `weekChapter[week] = chapters[]`  
+  use keys to get chapters
+		- [x] `chapter` => `chapterWeek[chapter] = +week`  
+  on each, append to new object
+
+- [x] `points`: derived from `assignment`
+	
+	```js
+	assignment.split(' ').shift() == 'PrepU' && '1'
+	|| assignment == 'Pre-Lecture Quiz' && '0.5'
+	|| '.25'
+	```
+
+  becomes  
+
 	```js
 	{
 		"PrepU Mastery Level Quizzes by Chapter": 1.0,
 		"Pre-Lecture Quiz": 0.5,
 	}[assignment] || 0.25
 	```
-- [ ] total is += points
-
-### harder ones
-
-- [x] week
-  - [x] weekChapter => chapterWeek
-  - [ ] 
