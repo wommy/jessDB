@@ -15,3 +15,11 @@ this 11-27.txt file
 each assignment takes 5 rows
 
 i should probably just put this into csv first
+
+- [x] removed old headers
+- [x] fixed up the date
+
+## whats next
+
+- [ ] readd headers
+- [ ] transform data
