@@ -1,5 +1,5 @@
 {
-  "name": "jessDB",
+  "name": "jess-db",
   "version": "1.0.0",
   "description": "A splendid starter for my Slinkity site!",
   "main": ".eleventy.js",
@@ -18,6 +18,8 @@
     "@slinkity/renderer-react": "^0.1.0",
     "@slinkity/renderer-svelte": "^0.1.0",
     "@slinkity/renderer-vue": "^0.1.0",
+    "cheerio": "^1.0.0-rc.10",
+    "node-fetch": "2",
     "slinkity": "^0.6.1-canary.0",
     "vite": ">=2.7.0 <3.0.0"
   },
