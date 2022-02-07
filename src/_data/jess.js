@@ -11,24 +11,39 @@ let rowsPre = {
 }
 
 const $ = cheerio.load(markup, { xml: { normalizeWhitespace: true } }, false)
-$('table tbody tr td:nth-child(1)').each( (index, element) => {
-  const assignment = $(element).text()
-  const resource_type = $(element).next().text()
-  const topic = $(element).next().next().text()
-  const date_completed = $(element).next().next().next().next().text()
-  const score = $(element).next().next().next().next().next().text()
-  if( score !== 'Complete' ){ return }
-  rowsPre.content.push({
-    assignment,
-    resource_type,
-    topic,
-    date_completed,
-    score,
-  })
-})
+let items = []
+$('.item').each( (i,el) => items.push( $(el).text().trim() ) )
+for( let i = 0; i < items.length; i+=6 ){
+  let schema = {
+    assignment: items[i],
+    resource_type: items[i+1],
+    topic: items[i+2],
+    due_date: items[i+3],
+    date_completed: items[i+4],
+    score: items[i+5],
+  }
+  if(schema.score === 'Complete'){ 
+    rowsPre.content.push( schema )
+   }
+}
+// $('table tbody tr td:nth-child(1)').each( (index, element) => {
+//   const assignment = $(element).text()
+//   const resource_type = $(element).next().text()
+//   const topic = $(element).next().next().text()
+//   const date_completed = $(element).next().next().next().next().text()
+//   const score = $(element).next().next().next().next().next().text()
+//   if( score !== 'Complete' ){ return }
+//   rowsPre.content.push({
+//     assignment,
+//     resource_type,
+//     topic,
+//     date_completed,
+//     score,
+//   })
+// })
 
 const $2 = cheerio.load(markup2, { xml: { normalizeWhitespace: true } }, false)
-let items = []
+items = []
 $2('.item').each( (i,el) => items.push( $2(el).text().trim() ) )
 for( let i = 0; i < items.length; i+=5 ){
   let schema = {
@@ -69,16 +84,20 @@ rowsPre.content.map( e => {
 		"Pre-Lecture Quiz": .5,
 	}[assignment] || .25
 
-  rowsPost.content.push({
+  let schema = {
     week: chapterWeek[chapter],
-    book: 'karch',
+    book: 'Norris',
     chapter: `Chapter ${chapter}`,
     assignment,
     date: e[rowsPre.headers[3]].slice(0,12).trim(),
     grade: e[rowsPre.headers[4]],
     points,
     total: total += points,
-  })
+  }
+
+  // if( schema.week ){
+    rowsPost.content.push(schema)
+  // }
 })
 
 module.exports = {
