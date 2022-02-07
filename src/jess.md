@@ -1,9 +1,9 @@
 ---
 layout: base
 ---
-{% for i in range(0,5) %}
+{# for i in range(0,5) %}
 {{ jess.rowsPost.content[i] | log }}
-{% endfor %}
+{% endfor #}
 
 <details>
 	<summary>rows pre</summary>

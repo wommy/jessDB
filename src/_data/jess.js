@@ -27,21 +27,31 @@ $('table tbody tr td:nth-child(1)').each( (index, element) => {
   })
 })
 
-// const $2 = cheerio.load(markup2, { xml: { normalizeWhitespace: true } }, false)
+const $2 = cheerio.load(markup2, { xml: { normalizeWhitespace: true } }, false)
+$2('section').each( (i,el) => {
+  let items = $(el)
+    .text()
+    .replace(/\s\s+/g, '\n')
+    .split('\n')
+  let first = items.shift()
+  let last = items.pop()
+  console.log(items)
+})
+// console.log($2('section span').first().text())
 // $2('table tbody tr td:nth-child(1)').each( (index, element) => {
 //   const assignment = $(element).text()
-//   const resource_type = $(element).next().text()
-//   const topic = $(element).next().next().text()
-//   const date_completed = $(element).next().next().next().next().text()
-//   const score = $(element).next().next().next().next().next().text()
-//   if( score !== 'Complete' ){ return }
-//   rowsPre.content.push({
-//     assignment,
-//     resource_type,
-//     topic,
-//     date_completed,
-//     score,
-//   })
+  // const resource_type = $(element).next().text()
+  // const topic = $(element).next().next().text()
+  // const date_completed = $(element).next().next().next().next().text()
+  // const score = $(element).next().next().next().next().next().text()
+  // if( score !== 'Complete' ){ return }
+  // rowsPre.content.push({
+  //   assignment,
+  //   resource_type,
+  //   topic,
+  //   date_completed,
+  //   score,
+  // })
 // })
 
 let rowsPost = {
