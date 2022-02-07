@@ -7,20 +7,11 @@
     "start": "slinkity --serve --incremental",
     "build": "slinkity"
   },
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "svelte": "^3.46.2",
-    "vue": "^3.2.28"
-  },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0-beta.10",
-    "@slinkity/renderer-react": "^0.1.0",
-    "@slinkity/renderer-svelte": "^0.1.0",
-    "@slinkity/renderer-vue": "^0.1.0",
     "cheerio": "^1.0.0-rc.10",
     "node-fetch": "2",
-    "slinkity": "^0.6.1-canary.0",
+    "slinkity": "^0.6.1-canary.2",
     "vite": ">=2.7.0 <3.0.0"
   },
   "peerDependencies": {

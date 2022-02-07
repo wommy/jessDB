@@ -28,31 +28,18 @@ $('table tbody tr td:nth-child(1)').each( (index, element) => {
 })
 
 const $2 = cheerio.load(markup2, { xml: { normalizeWhitespace: true } }, false)
-$2('section').each( (i,el) => {
-  let items = $(el)
-    .text()
-    .replace(/\s\s+/g, '\n')
-    .split('\n')
-  let first = items.shift()
-  let last = items.pop()
-  console.log(items)
-})
-// console.log($2('section span').first().text())
-// $2('table tbody tr td:nth-child(1)').each( (index, element) => {
-//   const assignment = $(element).text()
-  // const resource_type = $(element).next().text()
-  // const topic = $(element).next().next().text()
-  // const date_completed = $(element).next().next().next().next().text()
-  // const score = $(element).next().next().next().next().next().text()
-  // if( score !== 'Complete' ){ return }
-  // rowsPre.content.push({
-  //   assignment,
-  //   resource_type,
-  //   topic,
-  //   date_completed,
-  //   score,
-  // })
-// })
+let items = []
+$2('.item').each( (i,el) => items.push( $2(el).text().trim() ) )
+for( let i = 0; i < items.length; i+=5 ){
+  let schema = {
+    assignment: items[i],
+    resource_type: items[i+1],
+    topic: items[i+2],
+    date_completed: items[i+3],
+    score: items[i+4],
+  }
+  rowsPre.content.push( schema )
+}
 
 let rowsPost = {
   headers: ['week','book','chapter','assignment','date','grade','points','total'],
