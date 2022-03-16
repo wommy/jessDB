@@ -1,0 +1,13 @@
+{
+  "name": "jessDB",
+  "version": "0.4.0",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "eleventy --serve --incremental",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0-canary.3",
+    "cheerio": "^1.0.0-rc.10"
+  }
+}

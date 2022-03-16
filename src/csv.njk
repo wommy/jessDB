@@ -1,0 +1,8 @@
+---
+permalink: 'jessDB-03-15.csv'
+---
+"{{ jess.rowsPost.headers[0] }}","{{ jess.rowsPost.headers[1] }}","{{ jess.rowsPost.headers[2] }}","{{ jess.rowsPost.headers[3] }}","{{ jess.rowsPost.headers[4] }}","{{ jess.rowsPost.headers[5] }}","{{ jess.rowsPost.headers[6] }}","{{ jess.rowsPost.headers[7] }}"
+{% for ea in jess.rowsPost.content %}
+"{{ ea.week }}","{{ ea.book }}","{{ ea.chapter }}","{{ ea.assignment }}","{{ ea.date }}","{{ ea.grade }}","{{ ea.points }}","{{ ea.total }}"
+{% endfor %}
+{# jess.rowsPost.content | log #}
