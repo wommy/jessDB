@@ -3,16 +3,24 @@
 ## get the data
 
 - https://thepoint.lww.com/MyContent
-- launch pathophysiology
-- results > results
-- assigned & unassigned
+	- pathophysiology
+	- results > results
+	- assigned & unassigned
+
+- `/public/ 1 & 2`
 
 ## update chapterWeek
 
 week | chapters
 ---- | ----
-5 | 19-20
-6 | 21-24
-7 | 25-28
-8 | 29-31
-9 | 32-35
+10 | 36-39
+11 | 40-42
+12 | 43-46
+13 | 47-49
+14 | 50-52
+
+### package.json
+
+- [x] update SEMVER
+- [x] update packages
+- ???
