@@ -3,9 +3,18 @@
 //these two are use for markup next
 const path = require('path')
 const fs = require('fs')
-
-const markup = fs.readFileSync( path.join(__dirname, '../../public/jess-data1.html'), 'utf-8' )
-const markup2 = fs.readFileSync( path.join(__dirname, '../../public/jess-data2.html'), 'utf-8' )
+const markup = fs.readFileSync( path.join(__dirname, './_includes/jess-data1.html'), 'utf-8' )
+const markup2 = fs.readFileSync( path.join(__dirname, './_includes/jess-data2.html'), 'utf-8' )
+// 
+//// so whats my idea
+// function ( plugin data-1,2 )
+// cheerio it
+// tablegen it
+// func pre2post
+// export
+//
+// do i write files?
+// // 1, 2 step?
 
 //// whens cheerio used?
 // own module? probs,
