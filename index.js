@@ -1,14 +1,16 @@
+//// includes
+//
+//these two are use for markup next
 const path = require('path')
 const fs = require('fs')
-const cheerio = require('cheerio')
 
 const markup = fs.readFileSync( path.join(__dirname, '../../public/jess-data1.html'), 'utf-8' )
 const markup2 = fs.readFileSync( path.join(__dirname, '../../public/jess-data2.html'), 'utf-8' )
 
-let rowsPre = {
-  headers: ['assignment','resource_type','topic','date_completed','score'],
-  content: [],
-}
+//// whens cheerio used?
+// own module? probs,
+// probs also previous
+const cheerio = require('cheerio')
 
 const $ = cheerio.load(markup, { xml: { normalizeWhitespace: true } }, false)
 let items = []
@@ -41,12 +43,26 @@ for( let i = 0; i < items.length; i+=5 ){
   rowsPre.content.push( schema )
 }
 
+//// table gen
+//
+
+// why not rows.pre rows.post
+let rowsPre = {
+  headers: ['assignment','resource_type','topic','date_completed','score'],
+  content: [],
+}
 let rowsPost = {
   headers: ['week','book','chapter','assignment','date','grade','points','total'],
   content: [],
 }
 
+// total
 let total = 0
+
+
+//// weekChapter / chapterWeek
+//
+//this boys a doozy
 const weekChapter = {
   05: [19,20],
   06: [21,22,23,24],
