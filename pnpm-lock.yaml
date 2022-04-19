@@ -1,25 +1,25 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@11ty/eleventy': ^2.0.0-canary.3
+  '@11ty/eleventy': ^2.0.0-canary.6
   cheerio: ^1.0.0-rc.10
 
 devDependencies:
-  '@11ty/eleventy': 2.0.0-canary.3
+  '@11ty/eleventy': 2.0.0-canary.6
   cheerio: 1.0.0-rc.10
 
 packages:
 
-  /@11ty/dependency-tree/2.0.0:
-    resolution: {integrity: sha512-tYrGX3Tvccufy2jaYDkYpjBmVP1LeQq6b/d0r4GYThTXL4f3ZR7yMAl/0r8h9xvnsP+gkO53wfnV7s8cXcCtEg==}
+  /@11ty/dependency-tree/2.0.1:
+    resolution: {integrity: sha512-5R+DsT9LJ9tXiSQ4y+KLFppCkQyXhzAm1AIuBWE/sbU0hSXY5pkhoqQYEcPJQFg/nglL+wD55iv2j+7O96UAvg==}
     dev: true
 
-  /@11ty/eleventy-dev-server/1.0.0-canary.7:
-    resolution: {integrity: sha512-aHL8sE44yh922CK+KRSxz1jJLVdVSZwULZ5HPuP1SJzjSkdQgkmlQf05BlFtWINsiimbqZA4Jb8nRGsoFnovHw==}
+  /@11ty/eleventy-dev-server/1.0.0-canary.9:
+    resolution: {integrity: sha512-+NQovuRu+xaTBgwoJSt+s0IMNMCv7nBADnV4BB8EmcEjK2N0q+vUs6/Z4J8z+vbBy/aDBSVFFYiNL66P0zQQEw==}
     engines: {node: '>=12'}
     dependencies:
-      '@11ty/eleventy-utils': 1.0.0
-      debug: 4.3.3
+      '@11ty/eleventy-utils': 1.0.1
+      debug: 4.3.4
       dev-ip: 1.0.1
       finalhandler: 1.1.2
       mime: 3.0.0
@@ -32,40 +32,40 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@11ty/eleventy-utils/1.0.0:
-    resolution: {integrity: sha512-4fH2zDT6+RD+1JIdpg9cVix1LWuCAdsAy7vwZIwOjIQp0wcHUtmwxoXzi+5YnZdRa2TnqfAfn9LZLQ8WjKdG4g==}
+  /@11ty/eleventy-utils/1.0.1:
+    resolution: {integrity: sha512-HPpCTz4PzudcQU+i+x6GSNHVqgnvRhnVYg5dLKaAoRWLN966odAGsBxKSyhF8i1MdlOPtsytYb2AGWP7jISC5w==}
     engines: {node: '>=12'}
     dependencies:
       normalize-path: 3.0.0
     dev: true
 
-  /@11ty/eleventy/2.0.0-canary.3:
-    resolution: {integrity: sha512-446TfaDRHaA20IrMb6ejIBbOHM36n5fWGP1sMig4/l/fooIk8nCbSiCuC2xlk9iyJ2iUfvWq2SpyW2K3gFLvkw==}
+  /@11ty/eleventy/2.0.0-canary.6:
+    resolution: {integrity: sha512-Ss3fuyg8Jc611j5is5uozY0XqdfwNyn/UOwF2Y8VbxXwY4gCsbGJISwCupbdVA7V0UcVhCty8W8p9IrxXIzxsA==}
     engines: {node: '>=12'}
     hasBin: true
     dependencies:
-      '@11ty/dependency-tree': 2.0.0
-      '@11ty/eleventy-dev-server': 1.0.0-canary.7
-      '@11ty/eleventy-utils': 1.0.0
+      '@11ty/dependency-tree': 2.0.1
+      '@11ty/eleventy-dev-server': 1.0.0-canary.9
+      '@11ty/eleventy-utils': 1.0.1
       '@iarna/toml': 2.2.5
       '@sindresorhus/slugify': 1.1.2
       chokidar: 3.5.3
       cross-spawn: 7.0.3
-      debug: 4.3.3
+      debug: 4.3.4
       dependency-graph: 0.11.0
       ejs: 3.1.6
       fast-glob: 3.2.11
-      graceful-fs: 4.2.9
+      graceful-fs: 4.2.10
       gray-matter: 4.0.3
       hamljs: 0.6.2
       handlebars: 4.7.7
       is-glob: 4.0.3
       kleur: 4.1.4
-      liquidjs: 9.36.0
+      liquidjs: 9.36.2
       lodash: 4.17.21
-      luxon: 2.3.1
+      luxon: 2.3.2
       markdown-it: 12.3.2
-      minimist: 1.2.5
+      minimist: 1.2.6
       moo: 0.5.1
       multimatch: 5.0.0
       mustache: 4.2.0
@@ -76,7 +76,7 @@ packages:
       pretty: 2.0.0
       pug: 3.0.2
       recursive-copy: 2.0.14
-      semver: 7.3.5
+      semver: 7.3.7
       slugify: 1.6.5
     transitivePeerDependencies:
       - bufferutil
@@ -406,8 +406,8 @@ packages:
       ms: 2.0.0
     dev: true
 
-  /debug/4.3.3:
-    resolution: {integrity: sha512-/zxw5+vh1Tfv+4Qn7a5nsbcJKPaSvCDhojn6FEl9vupwK2VCSDtEiEtqr8DFtzYFOdz63LBkxec7DYuc2jon6Q==}
+  /debug/4.3.4:
+    resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
     engines: {node: '>=6.0'}
     peerDependencies:
       supports-color: '*'
@@ -615,8 +615,8 @@ packages:
       path-is-absolute: 1.0.1
     dev: true
 
-  /graceful-fs/4.2.9:
-    resolution: {integrity: sha512-NtNxqUcXgpW2iMrfqSfR73Glt39K+BLwWsPs94yR63v45T0Wbej7eRmL5cWfwEgqXnmjQp3zaJTshdRW/qC2ZQ==}
+  /graceful-fs/4.2.10:
+    resolution: {integrity: sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==}
     dev: true
 
   /gray-matter/4.0.3:
@@ -638,7 +638,7 @@ packages:
     engines: {node: '>=0.4.7'}
     hasBin: true
     dependencies:
-      minimist: 1.2.5
+      minimist: 1.2.6
       neo-async: 2.6.2
       source-map: 0.6.1
       wordwrap: 1.0.0
@@ -829,8 +829,8 @@ packages:
       uc.micro: 1.0.6
     dev: true
 
-  /liquidjs/9.36.0:
-    resolution: {integrity: sha512-HbU4xBsY1r3ZEORTgPsiluXsOtMx8iI0MqTsPejgIk+sIgta5wQUYsoQgUPuGKWVHKKKMO9PidiMEPKlePl8rg==}
+  /liquidjs/9.36.2:
+    resolution: {integrity: sha512-AE0kClig6U+oBrvolRHRyL7m+YRLFxpN2ZL6GLVmfXb5wkb9c9+f52uRle1GIJnFYTPBOCpWQiL+7vi71hlcEA==}
     engines: {node: '>=4.8.7'}
     hasBin: true
     dev: true
@@ -857,8 +857,8 @@ packages:
       yallist: 4.0.0
     dev: true
 
-  /luxon/2.3.1:
-    resolution: {integrity: sha512-I8vnjOmhXsMSlNMZlMkSOvgrxKJl0uOsEzdGgGNZuZPaS9KlefpE9KV95QFftlJSC+1UyCC9/I69R02cz/zcCA==}
+  /luxon/2.3.2:
+    resolution: {integrity: sha512-MlAQQVMFhGk4WUA6gpfsy0QycnKP0+NlCBJRVRNPxxSIbjrCbQ65nrpJD3FVyJNZLuJ0uoqL57ye6BmDYgHaSw==}
     engines: {node: '>=12'}
     dev: true
 
@@ -912,8 +912,8 @@ packages:
       brace-expansion: 1.1.11
     dev: true
 
-  /minimist/1.2.5:
-    resolution: {integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==}
+  /minimist/1.2.6:
+    resolution: {integrity: sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==}
     dev: true
 
   /minipass/3.1.6:
@@ -927,7 +927,7 @@ packages:
     resolution: {integrity: sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==}
     hasBin: true
     dependencies:
-      minimist: 1.2.5
+      minimist: 1.2.6
     dev: true
 
   /moo/0.5.1:
@@ -1201,7 +1201,7 @@ packages:
     resolution: {integrity: sha512-K8WNY8f8naTpfbA+RaXmkaQuD1IeW9EgNEfyGxSqqTQukpVtoOKros9jUqbpEsSw59YOmpd8nCBgtqJZy5nvog==}
     dependencies:
       errno: 0.1.8
-      graceful-fs: 4.2.9
+      graceful-fs: 4.2.10
       junk: 1.0.3
       maximatch: 0.1.0
       mkdirp: 0.5.5
@@ -1255,8 +1255,8 @@ packages:
     hasBin: true
     dev: true
 
-  /semver/7.3.5:
-    resolution: {integrity: sha512-PoeGJYh8HK4BTO/a9Tf6ZG3veo/A7ZVsYrSA6J8ny9nb3B1VrpkuN+z9OE5wfE5p6H4LchYZsegiQgbJD94ZFQ==}
+  /semver/7.3.7:
+    resolution: {integrity: sha512-QlYTucUYOews+WeEujDoEGziz4K6c47V/Bd+LjSSYcA94p+DmINdf7ncaUinThfvZyu13lN9OY1XDxt8C0Tw0g==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
